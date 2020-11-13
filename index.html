@@ -1,5 +1,6 @@
+
 <html>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <style>
@@ -9,48 +10,191 @@
     body,p1{font-family:"Poppins", Arial, sans-serif}
     </style>
 <body>
-    <header class="w3-panel w3-center w3-opacity" style="padding:128px 16px">
+    <header class="w3-panel w3-center w3-opacity" style="padding:128px 50px">
     <h1>The Disappearing Lakes of Bangalore</h1>
-    <paragraph class="w3-panel w3-center w3-opacity" style="padding:128px 16px">
-     <p1>The story of water bodies in Bangalore </p1>
-     <head>
+    <paragraph class="w3-panel w3-center w3-opacity" style="padding:128px 20px">
+    <p1>Water, a resource so close to us, not only crucial to our day to day activities but also for our sustenance as a community. Our lives cannot go one without water. But, how is it so that a resource so close to us is exploited without any caution? Today, many cities in India are facing an acute water crisis and the so called ‘Garden City’ of Bengaluru is so exception.
+    </p1>
+</body>
+<br>
+<br>
+<p2>In the 16th century, Kempegowda built tanks and irrigation wells as well. Traditionally in interlinked through a chain or cascade system, this ensured water was not wasted. These lakes were a part of the community, they irrigated fields, took care of the environment and were sources of livelihoods.
+   </p2>
+   <br>
+   <br>
+   <p3>Over time, most of these lakes have disappeared due to encroachment, blockage of connecting channels and so on. With just about 153 lakes left today of 980 in 1950-1960. Most of them are in really bad shape with sewage and waste flowing into them, destroying the environment, ecosystem and serving no purpose to us as well. According to a report by IISC,Bengaluru is said to run out of ground water by the end of 2020 and out of portable drinking water by 2030, creating an alarming situation for us to act upon
+</p3>
+<br>
+<br>
+<br>
+<p3>The visualization shows the number of disappearing likes over time.</p3>
+<head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-.slidecontainer {
-  width: 100%;
+* {box-sizing: border-box}
+body {font-family: Poppins, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 600px;
+  position: relative;
+  margin: auto;
+  margin-top: 50px;
+  
 }
 
-.slider {
-  -webkit-appearance: none;
-  width: 100%;
-  height: 25px;
-  background: #d3d3d3;
-  outline: none;
-  opacity: 0.7;
-  -webkit-transition: .2s;
-  transition: opacity .2s;
-}
-
-.slider:hover {
-  opacity: 1;
-}
-
-.slider::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  appearance: none;
-  width: 25px;
-  height: 25px;
-  background: #797979;
+/* Next & previous buttons */
+.prev, .next {
   cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
 }
 
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #575757;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 100 px
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
 }
 </style>
 </head>
 <body>
 
-  <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
-</div>
-</body>
+<div class="slideshow-container">
 
-</html>
+<div class="mySlides fade">
+  <div class="numbertext">1 / 5</div>
+  <img src="1950-1960.png" style="width:100%">
+  <div class="text">1950-1960</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 5</div>
+  <img src="1960-1973.png" style="width:100%">
+  <div class="text">1960-1973</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 5</div>
+  <img src="1973-1979.png" style="width:100%">
+  <div class="text">1973-1979</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 5</div>
+  <img src="1979-1998.png" style="width:100%">
+  <div class="text">1979-1998</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">5/ 5</div>
+  <img src="1998-2012.png" style="width:100%">
+  <div class="text">1998-2012</div>
+</div>
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+</body>
+</html> 
